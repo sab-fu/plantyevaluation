@@ -1,0 +1,296 @@
+/**
+ * Theme Name:     Astra Child
+ * Author:         Brainstorm Force
+ * Template:       astra
+ * Text Domain:	   astra-child
+ * Description:    Astra is fast, fully customizable
+ */
+ /*construction page*/
+ #masthead .ast-container, .site-header-focus-item + .ast-breadcrumbs-wrapper {
+    padding-left: 35px;
+ }
+   
+ .ast-builder-grid-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-column-gap: 20px;
+    overflow-wrap: anywhere;
+  width: 1500px;
+} 
+.ast-builder-menu-1 .menu-item.current-menu-item > .menu-link{
+padding-left: 0;
+padding-right: 20px;
+}  
+
+ .ast-header-button-1 .ast-custom-button{
+    width: 236px;
+height: 80px;
+text-align: center;
+padding-top: 30px;
+ }
+
+ .ast-above-header-bar .site-above-header-wrap {
+   width: 1440px;
+   margin: 0;
+  padding-left: 10px;
+ }
+
+ 
+ 
+ .entry-content > .wp-block-cover  {
+    padding-left: 0;
+    padding-right: 0;
+ }
+
+ .entry-content[ast-blocks-layout] > .wp-block-cover .wp-block-cover__inner-container   {
+    max-width: 100%;
+ }
+ .entry-content[ast-blocks-layout] > figure {
+     padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+.wp-container-10.wp-container-10, .wp-container-14.wp-container-14 {
+   gap: 0;
+  
+}
+.wp-block-columns{
+ gap:0;
+    padding: 0 ;
+
+}
+.wp-container-core-group-layout-1.wp-container-core-group-layout-1 {
+    position: relative;
+
+}
+.wp-block-button .wp-block-button__link {
+    box-shadow: 0px 0px 0 #00000026;
+    width: 193px;
+    height: 55px;
+}
+.wp-image-25{
+ position: absolute;
+z-index:2 ;
+left: 75%;
+bottom: 10%;
+}
+
+/*formulaire de renseignements page nous rencontrer*/
+
+form {
+    background: #3b8e46;
+  
+ width: 900px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.form-container hr {
+    width: 1px;
+    background: white;
+    height: 340px;
+    margin: 0;
+}
+
+form input[type='text'],
+form input[type='email'] {
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+}
+
+form input[type='submit'] {
+    margin: auto;
+    display: block;
+    min-width: 128px;
+    margin-bottom: 1em;
+    background-color:#E0B9B4 ;
+    border-radius: 5px;
+}
+.wpcf7 input:not([type=submit]), .wpcf7 select, .wpcf7 textarea {
+    width: 383px;
+    padding: 0.75em;
+}
+
+#rencontrer{ background-color: #ECE2DA;
+}
+ 
+.form-rencontrer{
+     margin-right: 35%;
+     position: relative;
+     margin-left: 5%;
+     z-index: 2;
+}
+.wpcf7 textarea{
+    height: 237px;
+}
+
+ .petite-fleur{
+    position: absolute;
+    bottom: 250px;
+    left: 470px;
+    z-index: 1;  
+ }
+/* formulaire commande bouton quantite avec image*/
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.commander input[type='number'] {
+	
+        width: 50px;
+        background-color:white;
+       border-radius: 5px 0 0 5px;
+        height: 62px;
+}
+.input-cont {
+	display: flex;
+	margin-top: 1em;
+   height: 60px;
+background-color: #E0B9B4;
+  border-radius: 5px;  
+}
+.buttons-cont {
+	display: flex;
+	justify-content:start;
+	align-items: flex-start;
+    width: 150px;
+    margin-left: 0;
+}
+
+  
+ .modify-btns button {
+ background-color: #E0B9B4 ;
+ border: none;
+ color: white;
+padding: 9px 5px;
+ cursor: pointer;
+ width: 30px;
+ height: 22px;
+} 
+
+ .modify-btns .btn-plus {
+ border-radius: 0 5px 0 0;
+ width: 30px;
+ } 
+
+.btn-mois {
+ border-radius: 0 0 5px 0;
+ width: 25px;
+ } 
+.btn-ok {
+ background-color: #e0b9b4;
+ border: none;
+ border-radius: 5px;
+ margin-top: 20px;
+ padding: 1.5em;
+  width:100px;
+ height: 62px;
+ color: white;
+ cursor: pointer;
+ margin-left: 3px;
+ }
+ /* pour ne pas voir le bouton admin*/
+ #astra-footer-menu .menu-item:last-child{
+ display: none;
+}
+    
+    
+/*pour tabette*/
+  
+@media only screen and (max-width: 765px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .form-container hr {
+        display: none;
+    }
+    h2, .entry-content h2  {
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .wp-container-core-column-layout-1.wp-container-core-column-layout-1 > * {
+        display: none;
+        
+    }
+    #rencontrer{
+        margin-left: 20px;
+        width: 50%;
+    }
+    .wp-image-25 {
+        display:none;
+    }
+    .wp-image-23 {
+        display:none;
+    }
+}
+/* pour mobile*/
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .form-container {
+       width: 300px;
+      
+    }
+    .wp-container-core-column-layout-1.wp-container-core-column-layout-1 > * {
+        display: none;
+    }
+
+     #rencontrer{
+    margin-left: 0;
+    width: 50%;
+   
+     }
+     .entry-content[ast-blocks-layout] .alignfull {
+         width: 450px;
+        margin: 10px;
+     }
+    
+     .form-rencontrer{
+        width: 100px;
+     }
+
+     .form-container  {
+        display: flex;
+        color: white;
+        width: 200px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: stretch;
+   
+    }
+   .wpcf7-form-control-wrap{
+    width: 100px;
+   }
+    form input[type='submit']{
+        margin: auto;
+        align-items: flex-start;
+        min-width: 128px;
+        margin-bottom: 1em;
+        background-color: #E0B9B4;
+        border-radius: 5px;
+    }
+   
+    
+    
+}
+     
+     
+    
+    
