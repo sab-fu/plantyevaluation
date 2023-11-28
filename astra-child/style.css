@@ -210,54 +210,125 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /*pour tabette*/
+@media only screen and (max-width: 1100px) {
+	.wp-image-25 {
+		display: none;
+	}
+}
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 920px) {
+	#rencontrer {
+		margin-left: 50px;
+		margin-left: 0;
+		padding-right: 750px;
+	}
+	.has-text-align-center {
+		width: 100%;
+	}
+    	.premiere-partie {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 4px solid white;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-container {
+		display: flex;
+		justify-content: space-evenly;
+		color: white;
+		align-items: center;
+		width: 100%;
+		flex-direction: column;
+	}
+    .form-container hr {
+		width: 0px;
+		height: 0px;
+		margin: 0;
+	}
+
+}
+@media only screen and (max-width: 780px) {
 	.form-container {
 		flex-direction: column;
 		align-items: center;
+		margin-left: 0;
+		margin-right: 50px;
 	}
 	.form-container hr {
 		display: none;
 	}
 	h2,
 	.entry-content h2 {
-		font-weight: normal;
+		font-weight: 800;
 		font-size: 20px;
 	}
 	.wp-container-core-column-layout-1.wp-container-core-column-layout-1 > * {
 		display: none;
 	}
 	#rencontrer {
-		margin-left: 20px;
-		width: 50%;
+		margin-left: 200px;
 	}
+	.premiere-partie {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 4px solid white;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-container {
+		display: flex;
+		justify-content: space-evenly;
+		color: white;
+		align-items: center;
+		width: 100%;
+		flex-direction: column;
+	}
+
 	.wp-image-25 {
 		display: none;
 	}
 	.wp-image-23 {
 		display: none;
 	}
+	.wp-block-uagb-container h2 {
+		font-weight: 800;
+		font-size: small;
+	}
+	.has-text-align-center {
+		width: 100%;
+	}
+	.form-container hr {
+		width: 0px;
+		height: 0px;
+		margin: 0;
+	}
 }
 /* pour mobile*/
-@media only screen and (min-width: 300px) and (max-width: 500px) {
+@media only screen and (min-width: 200px) and (max-width: 700px) {
 	.form-container {
-		width: 300px;
+		width: 200px;
 	}
 	.wp-container-core-column-layout-1.wp-container-core-column-layout-1 > * {
 		display: none;
 	}
+	.wp-block-uagb-image-gallery {
+		width: 400px;
+	}
 
 	#rencontrer {
 		margin-left: 0;
-		width: 50%;
+		width: 100%;
+		padding-right: 40px;
 	}
 	.entry-content[ast-blocks-layout] .alignfull {
 		width: 450px;
 		margin: 10px;
 	}
 
-	.form-rencontrer {
-		width: 100px;
+	.wp-block-uagb-container {
+		margin: 0;
 	}
 
 	.form-container {
@@ -280,4 +351,103 @@ input[type="number"]::-webkit-outer-spin-button {
 		background-color: #e0b9b4;
 		border-radius: 5px;
 	}
+	.wp-block-uagb-container.uagb-is-root-container.alignfull.uagb-block-427177f5
+		> .uagb-container-inner-blocks-wrap {
+		--inner-content-custom-width: min(100%, 300px);
+	}
+	.wp-block-uagb-container h2 {
+		font-weight: 500;
+		font-size: small;
+	}
+	.has-text-align-center {
+		width: 100%;
+	}
+  
+    
+	.premiere-partie {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 4px solid white;
+		flex-direction: column;
+		align-items: flex-start;
+     
+	}
+
+.form-container {
+	display: flex;
+	color: white;
+	width: 200px;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: stretch;
+	padding-left: 50px;
+}
+.form-container hr {
+		width: 0px;
+		height: 0px;
+		margin: 0;
+	}
+}
+
+
+
+/*  commander  */
+
+.premiere-partie {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 4px solid white;
+}
+
+.form-control {
+	width: 25%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.form-control input[type="text"] {
+	width: 51px;
+	border-radius: 7px 0 0 7px;
+}
+
+.form-control p {
+	display: flex;
+	position: relative;
+	align-items: stretch;
+}
+.form-control button {
+	height: 49%;
+	padding: 4px 18px;
+}
+
+.form-control .plus {
+	position: absolute;
+	left: 51px;
+	top: 0;
+	border-radius: 0 7px 0 0;
+}
+
+.form-control .moins {
+	position: absolute;
+	left: 51px;
+	bottom: 0;
+	border-top: 1px solid white;
+	border-radius: 0 0 7px 0;
+}
+.premiere-partie h3 {
+	position: absolute;
+	top: 9%;
+	color: white;
+}
+
+.ok-btn {
+	border-bottom-width: 51px;
+	border-right-width: 50px;
+}
+.bouton {
+	padding-right: 45px;
 }
